@@ -1,6 +1,6 @@
-## Desarrolladores del proyecto: Gonzalo Martinez, Javier Retuerta y Guillermo Leal
-## Nombre del proyecto: MathStorm
-## Desarrollado en Java desde AndroidStudio
+<strong> Desarrolladores del proyecto: Gonzalo Martinez, Javier Retuerta y Guillermo Leal </strong>
+<strong> Nombre del proyecto: MathStorm </strong>
+<strong> Desarrollado en Java desde AndroidStudio </strong>
 
 El proyecto se trata de una aplicacion de uso principalmente educativo, su objetivo es ayudar a 
 gente de todas las edades a entender y mejorar en el ambito matematico.
