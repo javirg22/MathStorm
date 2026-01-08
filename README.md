@@ -1,1 +1,1 @@
-Esto es un readme y hay que editarlo
+Esto es un readme y hay que editarlo y mejorarlo
