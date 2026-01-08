@@ -41,4 +41,5 @@ siguiente ejercicio
 ## Perfil
 Pagina donde ver tu perfil o el de otras personas donde se mostrara los ejemplos vistos, ejercicios
 hechos y racha de ejercicios
+
 ![Perfil](img/profile.png)
