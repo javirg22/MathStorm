@@ -3,4 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="ButtonBackground">#FFFBFB</color>
     <color name="AppBackground">#F8EFF1</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde">#A2DA3F</color>
+    <color name="gris1">#EAEAEA</color>
+    <color name="gris2">#D6D6D6</color>
+    <color name="rojo">#DA2F1C</color>
+    <color name="gris3">#F8EFF1</color>
 </resources>
