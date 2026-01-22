@@ -5,4 +5,13 @@
     <string name="SecondUnderTitle_MainPage">aprende hoy o pon a prueba lo que sabes</string>
     <string name="FirstButtonText_MainPage">Aprende</string>
     <string name="SecondButtonText_MainPage">Ejercicios</string>
+    <string name="Aritm">Ejercicios Aritmética Básica</string>
+    <string name="Add">Suma</string>
+    <string name="Add_Text">Aprende a sumar</string>
+    <string name="Subs">Resta</string>
+    <string name="Subs_Text">Funcionamiento detrás de la resta</string>
+    <string name="Mult">Multiplicación</string>
+    <string name="Mult_Text">Para entender el uso de la multiplicación</string>
+    <string name="Div">División</string>
+    <string name="Div_Text">Entiende el cociente y resto de la división</string>
 </resources>
