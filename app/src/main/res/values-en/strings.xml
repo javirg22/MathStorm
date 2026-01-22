@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Title_MainPage">Learning</string>
+    <string name="UnderTitle_MainPage">Choose your path:</string>
+    <string name="SecondUnderTitle_MainPage">learn today or try your knowledge</string>
+    <string name="FirstButtonText_MainPage">Examples</string>
+    <string name="SecondButtonText_MainPage">Try your knowledge</string>
+</resources>
