@@ -10,7 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MathStorm">
+        android:theme="@style/Base.Theme.MathStorm">
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
         <activity
             android:name=".EjerciciosActivity"
             android:exported="false" />

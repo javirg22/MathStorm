@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">MathStorm</string>
     <string name="Title_MainPage">Aprendizaje</string>
     <string name="UnderTitle_MainPage">Elige tu camino:</string>
     <string name="SecondUnderTitle_MainPage">aprende hoy o pon a prueba lo que sabes</string>
