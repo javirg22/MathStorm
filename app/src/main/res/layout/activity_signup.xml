@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gris2"
+    android:background="@color/AppBackground"
     tools:context=".login">
 
     <ImageView
@@ -70,14 +70,15 @@
                 android:layout_marginTop="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="">
+                app:layout_constraintBottom_toTopOf="@id/til1"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:hint="Tu Nombre"
-                    android:src="@drawable/" />
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -95,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:hint="correo@ejemplo.com"
-                    android:src="@drawable/" />
+                     />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -141,11 +142,12 @@
                 android:layout_width="0dp"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
-                android:onClick="openMain"
-                android:text="LOGIN"
+                android:text="SIGN UP"
+                android:onClick="openLogin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til3" />
+
 
             <Button
                 android:id="@+id/buttonSignup"
@@ -153,8 +155,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:onClick="openSignup"
-                android:text="SIGN UP"
+                android:text="BACK"
+                android:onClick="backLogin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
