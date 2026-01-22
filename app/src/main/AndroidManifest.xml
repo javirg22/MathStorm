@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MathStorm">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".signup"
             android:exported="false" />
         <activity
@@ -19,15 +22,17 @@
             android:exported="false" />
         <activity
             android:name=".EjerciciosActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

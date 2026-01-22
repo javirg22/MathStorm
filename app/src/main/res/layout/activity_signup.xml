@@ -70,14 +70,14 @@
                 android:layout_marginTop="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="">
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:hint="Tu Nombre"
-                    android:src="@drawable/" />
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:hint="correo@ejemplo.com"
-                    android:src="@drawable/" />
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
