@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MathStorm</string>
+    <string name="Aritm">Aritmética Básica</string>
+    <string name="Add">Suma</string>
+    <string name="Add_Text">Analiza las bases de la suma</string>
+    <string name="Subs">Resta</string>
+    <string name="Subs_Text">Usa el sustraendo para restar</string>
+    <string name="Mult">Multiplicacion</string>
+    <string name="Mult_Text">Descubre como se multiplica con 2 múltiplos y un resultado</string>
+    <string name="Div">Division</string>
+    <string name="Div_Text">Aprende acerca de dividendo, divisor, cociente y resto</string>
 </resources>
