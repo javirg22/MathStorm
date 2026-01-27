@@ -23,14 +23,16 @@ public class signup extends AppCompatActivity {
             return insets;
         });
     }
-    public void openLogin(View v){
-        Intent intent = new Intent(signup.this, login.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+    public void openMain(View v){
+        Intent intent = new Intent(signup.this,MainActivity.class) ;
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
-    public void backLogin(View v){
+    public void openLogin(View v) {
         Intent intent = new Intent(signup.this, login.class);
+        // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 }

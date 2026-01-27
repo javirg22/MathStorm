@@ -29,6 +29,19 @@ public class login extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+    }
+    public void openMain(View v){
+        Intent intent = new Intent(login.this,MainActivity.class) ;
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
+    public void openSignup(View v) {
+        Intent intent = new Intent(login.this, signup.class);
+        // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
     }
     public void openMain(View v){
         Intent intent = new Intent(login.this, MainActivity.class);

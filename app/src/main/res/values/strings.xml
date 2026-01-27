@@ -18,4 +18,21 @@
     <string name="LoginSuccessful">Sesion iniciada correctamente</string>
     <string name="LoginUnsusccessful">Error al iniciar sesión, intente otro usuario o contraseña</string>
     <string name="WelcomeMessage">Bienvenido a MathStorm</string>
+    <string name="agradecimiento">Foto de <a href="https://unsplash.com/es/@steve_g_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Steve Gribble</a> en <a href="https://unsplash.com/es/fotos/olas-oceanicas-agitadas-rompiendo-contra-la-costa-rocosa-al-atardecer-PvAC_yGyWHA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
+    <string name="ImgDesc">Olas oceánicas agitadas rompiendo contra la costa rocosa al atardecer</string>
+    <string name="bienvenido">Bienvenido a MathStorm</string>
+    <string name="frase1">Inicia sesion para continuar a la aplicacion</string>
+    <string name="CorreoEjemplo">Correo@ejemplo.com</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="sesion">Iniciar Sesion</string>
+    <string name="registro">Registrarse</string>
+    <string name="cuenta">Crear Cuenta</string>
+    <string name="frase2">Registrate y empieza a aprender </string>
+    <string name="nombre">Tu Nombre</string>
+    <string name="confirmar">Confirmar Contraseña</string>
+    <string name="frase3">¿Ya tienes cuenta?</string>
+    <string name="nom">Nombre:</string>
+    <string name="password">Contraseña:</string>
+    <string name="correo">Correo:</string>
+    <string name="con2">Confirmar tu contraseña:</string>
 </resources>
