@@ -6,6 +6,17 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.MathStorm">
+        <activity
+            android:name=".mainBab"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="true"></activity>
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
@@ -39,6 +50,10 @@
         </activity>
         <activity
             android:name=".EjerciciosActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
             android:exported="true" >
 
         </activity>

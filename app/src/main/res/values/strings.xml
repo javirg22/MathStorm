@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">MathStorm</string>
+
     <string name="Title_MainPage">Aprendizaje</string>
     <string name="UnderTitle_MainPage">Elige tu camino:</string>
     <string name="SecondUnderTitle_MainPage">aprende hoy o pon a prueba lo que sabes</string>
@@ -14,6 +15,9 @@
     <string name="Mult_Text">Para entender el uso de la multiplicación</string>
     <string name="Div">División</string>
     <string name="Div_Text">Entiende el cociente y resto de la división</string>
+    <string name="LoginSuccessful">Sesion iniciada correctamente</string>
+    <string name="LoginUnsusccessful">Error al iniciar sesión, intente otro usuario o contraseña</string>
+    <string name="WelcomeMessage">Bienvenido a MathStorm</string>
     <string name="agradecimiento">Foto de <a href="https://unsplash.com/es/@steve_g_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Steve Gribble</a> en <a href="https://unsplash.com/es/fotos/olas-oceanicas-agitadas-rompiendo-contra-la-costa-rocosa-al-atardecer-PvAC_yGyWHA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
     <string name="ImgDesc">Olas oceánicas agitadas rompiendo contra la costa rocosa al atardecer</string>
     <string name="bienvenido">Bienvenido a MathStorm</string>
