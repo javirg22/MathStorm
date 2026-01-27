@@ -5,6 +5,48 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@drawable/splash">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="164dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="86dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/annapurna_sil_bold"
+        android:text="MathStorm"
+        android:textColor="@color/azul_logo"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@id/guideLine2"
+        app:layout_constraintStart_toEndOf="@id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

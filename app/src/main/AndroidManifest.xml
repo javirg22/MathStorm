@@ -13,7 +13,18 @@
         android:theme="@style/Base.Theme.MathStorm">
         <activity
             android:name=".SplashActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Theme.MathStorm.SplashScreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
         <activity
             android:name=".signup"
             android:exported="false" />
@@ -23,11 +34,7 @@
         <activity
             android:name=".EjerciciosActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
