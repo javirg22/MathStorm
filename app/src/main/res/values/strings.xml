@@ -14,4 +14,19 @@
     <string name="Mult_Text">Para entender el uso de la multiplicación</string>
     <string name="Div">División</string>
     <string name="Div_Text">Entiende el cociente y resto de la división</string>
+    <string name="bienvenido">Bienvenido a MathStorm</string>
+    <string name="frase1">Inicia sesion para continuar a la aplicacion</string>
+    <string name="CorreoEjemplo">Correo@ejemplo.com</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="sesion">Iniciar Sesion</string>
+    <string name="registro">Registrarse</string>
+    <string name="cuenta">Crear Cuenta</string>
+    <string name="frase2">Registrate y empieza a aprender </string>
+    <string name="nombre">Tu Nombre</string>
+    <string name="confirmar">Confirmar Contraseña</string>
+    <string name="frase3">¿Ya tienes cuenta?</string>
+    <string name="nom">Nombre:</string>
+    <string name="password">Contraseña:</string>
+    <string name="correo">Correo:</string>
+    <string name="con2">Confirmar tu contraseña:</string>
 </resources>
