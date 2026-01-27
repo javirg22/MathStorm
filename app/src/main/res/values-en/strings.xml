@@ -14,4 +14,20 @@
     <string name="Mult_Text">To understand the multiplication usage</string>
     <string name="Div">Divide</string>
     <string name="Div_Text">Comprehend the quotient and remainder of</string>
+    <string name="bienvenido">Welcome to MathStorm</string>
+    <string name="frase1">Sign in to continue to the application</string>
+    <string name="CorreoEjemplo">email@example.com</string>
+    <string name="contraseña">Password</string>
+    <string name="sesion">Sign In</string>
+    <string name="registro">Sign Up</string>
+    <string name="cuenta">Create Account</string>
+    <string name="frase2">Sign up and start learning</string>
+    <string name="nombre">Your Name</string>
+    <string name="confirmar">Confirm Password</string>
+    <string name="frase3">Do you already have an account?</string>
+    <string name="nom">Name:</string>
+    <string name="password">Password:</string>
+    <string name="correo">Email:</string>
+    <string name="con2">Confirm your password:</string>
+
 </resources>
