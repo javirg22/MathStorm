@@ -33,10 +33,12 @@ public class login extends AppCompatActivity {
     public void openMain(View v){
         Intent intent = new Intent(login.this, MainActivity.class);
         if(username.getText().toString().equals("user") && password.getText().toString().equals("1234")){
-            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,this.getString(R.string.LoginSuccessful) , Toast.LENGTH_SHORT).show();
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }else{
-            Toast.makeText(this, "Login failed, try new ursername or password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, this.getString(R.string.LoginUnsusccessful), Toast.LENGTH_SHORT).show();
         }
     }
     public void openSignup(View v){

@@ -2,6 +2,7 @@ package com.jagongui.mathstorm;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -23,9 +24,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-
+    public void openPrueba(View v){
+        Intent intent = new Intent(MainActivity.this, mainBab.class);
+        startActivity(intent);
+    }
     public void openExamples(View v){
         Intent intent = new Intent(MainActivity.this, EjerciciosActivity.class);
         startActivity(intent);
+    }
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+                                    ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.bottom_app_bar_menu, menu);
     }
 }

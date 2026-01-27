@@ -23,7 +23,7 @@
         android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a MathStorm"
+        android:text="@string/WelcomeMessage"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                app:layout_constraintTop_toBottomOf="@id/cardLogin"
+                app:layout_constraintBottom_toTopOf="@id/til2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 

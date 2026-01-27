@@ -75,6 +75,7 @@
 
         android:backgroundTint="@color/ButtonBackground"
         android:text="@string/SecondButtonText_MainPage"
+        android:onClick="openPrueba"
         app:layout_constraintTop_toBottomOf="@id/LearnButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
