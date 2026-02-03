@@ -12,29 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MathStorm">
         <activity
+            android:name=".DivsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SumaActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainBab"
             android:exported="false" />
         <activity
             android:name=".signup"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.MathStorm.SplashScreen"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-
+            android:theme="@style/Theme.MathStorm.SplashScreen" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
         <activity
             android:name=".EjerciciosActivity"
-            android:exported="false"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-        </application>
+            android:exported="false" />
+    </application>
 
 </manifest>

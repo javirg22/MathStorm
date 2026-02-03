@@ -6,6 +6,7 @@
     <string name="FirstButtonText_MainPage">Aprende</string>
     <string name="SecondButtonText_MainPage">Ejercicios</string>
     <string name="Aritm">Ejercicios Aritmética Básica</string>
+    <string name="Aritm2">Ejercicios Aritmética Avanzada</string>
     <string name="Add">Suma</string>
     <string name="Add_Text">Aprende a sumar</string>
     <string name="Subs">Resta</string>
@@ -34,5 +35,8 @@
     <string name="password">Contraseña:</string>
     <string name="correo">Correo:</string>
     <string name="con2">Confirmar tu contraseña:</string>
+    <string name="ans">Introduce tu respuesta</string>
+    <string name="nuevapregunta">Crear Nueva Pregunta</string>
+    <string name="comprobar">Comprobar</string>
 
 </resources>

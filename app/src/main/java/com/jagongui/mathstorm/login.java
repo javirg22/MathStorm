@@ -31,18 +31,7 @@ public class login extends AppCompatActivity {
         });
 
     }
-    public void openMain(View v){
-        Intent intent = new Intent(login.this,MainActivity.class) ;
-        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-    }
-    public void openSignup(View v) {
-        Intent intent = new Intent(login.this, signup.class);
-        // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-    }
+
     public void openMain(View v){
         Intent intent = new Intent(login.this, MainActivity.class);
         if(username.getText().toString().equals("user") && password.getText().toString().equals("1234")){

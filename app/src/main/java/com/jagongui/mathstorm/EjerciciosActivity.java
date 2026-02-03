@@ -1,6 +1,8 @@
 package com.jagongui.mathstorm;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +36,25 @@ public class EjerciciosActivity extends AppCompatActivity {
         multiCv = findViewById(R.id.MultiCv);
         divCv = findViewById(R.id.DivsCv);
 
+        sumaCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, SumaActivity.class);
+            startActivity(intent);
+        });
+
+        restaCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, RestaActivity.class);
+            startActivity(intent);
+        });
+
+        multiCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, MultiActivity.class);
+            startActivity(intent);
+        });
+
+        divCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
+            startActivity(intent);
+        });
 
 
     }
