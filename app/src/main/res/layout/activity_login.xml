@@ -137,7 +137,7 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/sesion"
-                android:onClick="openMain"
+
                 android:backgroundTint="@color/button_custom"
                 app:layout_constraintTop_toBottomOf="@id/til2"
                 app:layout_constraintStart_toStartOf="parent"
