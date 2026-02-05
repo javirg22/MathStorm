@@ -66,13 +66,31 @@ public class SumaActivity extends AppCompatActivity {
         }
 
         private void generateNewQuestion() {
-            int a = new Random().nextInt(10) + 1;
-            int b = new Random().nextInt(10) + 1;
+            int nTerm = new Random().nextInt(2) + 2;
+            if(nTerm == 2) {
 
-            correctAnswer = a + b;
-            tvOperation.setText(a + " + " + b + " = ?");
-            etAnswer.setText("");
-            tilAnswer.setError(null);
+                int a = new Random().nextInt(10) + 1;
+                int b = new Random().nextInt(10) + 1;
+
+
+
+                correctAnswer = a + b;
+                tvOperation.setText(a + " + " + b + " = ?");
+                etAnswer.setText("");
+                tilAnswer.setError(null);
+            } else if(nTerm == 3){
+
+                int a = new Random().nextInt(10) + 1;
+                int b = new Random().nextInt(10) + 1;
+                int c = new Random().nextInt(10) + 1;
+
+
+                correctAnswer = a + b + c;
+                tvOperation.setText(a + " + " + b + " + " + c + " = ?");
+                etAnswer.setText("");
+                tilAnswer.setError(null);
+            }
+
         }
 
         private void checkAnswer() {
