@@ -31,6 +31,7 @@ public class login extends AppCompatActivity {
         });
 
     }
+
     public void openMain(View v){
         Intent intent = new Intent(login.this, MainActivity.class);
         if(username.getText().toString().equals("user") && password.getText().toString().equals("1234")){
