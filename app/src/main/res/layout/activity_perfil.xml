@@ -80,7 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/estadisticas"
+                    android:text="@strings/estadisticas"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#000"
@@ -112,7 +112,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ejemplosV"
+                            android:text="@strings/ejemplosV"
                             android:textStyle="bold"
                             android:layout_marginTop="6dp" />
 
@@ -149,7 +149,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ejerciciosC"
+                            android:text="@strings/ejerciciosC"
                             android:textStyle="bold"
                             android:layout_marginTop="6dp" />
 
@@ -180,7 +180,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/racha"
+                            android:text="@strings/racha"
                             android:textStyle="bold" />
 
                         <TextView
@@ -195,7 +195,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/info"
+                    android:text="@strings/info"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#000"
@@ -250,7 +250,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="16dp"
-                    android:text="@string/cerrarS"
+                    android:text="@strings/cerrarS"
                     android:onClick="openSignup"
                     android:backgroundTint="@color/rojo"/>
 
