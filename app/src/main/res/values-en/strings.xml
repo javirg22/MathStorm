@@ -38,5 +38,8 @@
     <string name="nuevapregunta">Create a New Question</string>
     <string name="comprobar">Check</string>
     <string name="ans">Write your answer</string>
+    <string name="ansC">Introduce the quotient</string>
+    <string name="ansR">Write here the reminder of the operation</string>
+
 
 </resources>
