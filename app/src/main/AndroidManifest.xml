@@ -41,15 +41,19 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.MathStorm.SplashScreen" />
+            android:theme="@style/Theme.MathStorm.SplashScreen" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".login"
             android:exported="false" />
         <activity
             android:name=".EjerciciosActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -57,7 +61,7 @@
     </application>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -38,7 +38,6 @@ public class RestaActivity extends AppCompatActivity {
 
         Button btnCheck = findViewById(R.id.btnCheck);
         Button btnNew = findViewById(R.id.btnNew);
-        ImageButton btnBack = findViewById(R.id.btnBack);
 
         generateNewQuestion();
 
@@ -56,13 +55,6 @@ public class RestaActivity extends AppCompatActivity {
             }
         });
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RestaActivity.this, EjerciciosActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void generateNewQuestion() {

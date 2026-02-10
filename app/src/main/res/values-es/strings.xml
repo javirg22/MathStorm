@@ -42,6 +42,8 @@
     <string name="info">Informacion personal:</string>
     <string name="cerrarS">cerrar sesion</string>
     <string name="ans">Introduce tu respuesta</string>
+    <string name="ansC">Introduce el cociente de la division</string>
+    <string name="ansR">Introduce el resto de la operación</string>
     <string name="nuevapregunta">Crear Nueva Pregunta</string>
     <string name="comprobar">Comprobar</string>
 
