@@ -41,4 +41,10 @@
     <string name="ansR">Introduce el resto de la operación</string>
     <string name="nuevapregunta">Crear Nueva Pregunta</string>
     <string name="comprobar">Comprobar</string>
+    <string name="estadisticas">Tus Estadísticas:</string>
+    <string name="ejemplosV">Ejemplos vistos:</string>
+    <string name="ejerciciosC">Ejercicios completados:</string>
+    <string name="racha">Racha actual:</string>
+    <string name="info">Informacion personal:</string>
+    <string name="cerrarS">cerrar sesion</string>
 </resources>

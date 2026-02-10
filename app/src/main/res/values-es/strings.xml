@@ -35,6 +35,12 @@
     <string name="password">Contraseña:</string>
     <string name="correo">Correo:</string>
     <string name="con2">Confirmar tu contraseña:</string>
+    <string name="estadisticas">Tus Estadísticas:</string>
+    <string name="ejemplosV">Ejemplos vistos:</string>
+    <string name="ejerciciosC">Ejercicios completados:</string>
+    <string name="racha">Racha actual:</string>
+    <string name="info">Informacion personal:</string>
+    <string name="cerrarS">cerrar sesion</string>
     <string name="ans">Introduce tu respuesta</string>
     <string name="ansC">Introduce el cociente de la division</string>
     <string name="ansR">Introduce el resto de la operación</string>

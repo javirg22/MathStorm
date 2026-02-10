@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380459097705",
+    "project_id": "mathstorm-9ccd6",
+    "storage_bucket": "mathstorm-9ccd6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380459097705:android:ef216758ee906d5cb40cf8",
+        "android_client_info": {
+          "package_name": "com.jagongui.mathstorm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpYW3V0sSXXzk4i3WRJkuuIr7TxCbloAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

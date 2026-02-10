@@ -27,8 +27,17 @@
             android:name=".mainBab"
             android:exported="false" />
         <activity
+            android:name=".login"
+            android:exported="false"/>
+        <activity
             android:name=".signup"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".EjerciciosActivity"
+            android:exported="false"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -46,6 +55,10 @@
             android:name=".EjerciciosActivity"
             android:exported="true"/>
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
