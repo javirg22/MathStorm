@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
 
         mAuth = FirebaseAuth.getInstance();
-       // btn_exit = findViewById(R.id.cerrarSesion);
+        btn_exit = findViewById(R.id.cerrarSesion);
 
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
