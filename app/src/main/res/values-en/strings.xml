@@ -6,6 +6,7 @@
     <string name="FirstButtonText_MainPage">Examples</string>
     <string name="SecondButtonText_MainPage">Try your knowledge</string>
     <string name="Aritm">Basic Arithmetic Exercises</string>
+    <string name="Aritm2">Advanced Arithmetic Exercises</string>
     <string name="Add">Add</string>
     <string name="Add_Text">Learn to add</string>
     <string name="Subs">Substract</string>
@@ -34,5 +35,14 @@
     <string name="password">Password:</string>
     <string name="correo">Email:</string>
     <string name="con2">Confirm your password:</string>
+    <string name="estadisticas">Your Statistics:</string>
+    <string name="ejemplosV">Examples viewed:</string>
+    <string name="ejerciciosC">Completed exercises:</string>
+    <string name="racha">Current streak:</string>
+    <string name="info">Personal information:</string>
+    <string name="cerrarS">Log out</string>
+    <string name="nuevapregunta">Create a New Question</string>
+    <string name="comprobar">Check</string>
+    <string name="ans">Write your answer</string>
 
 </resources>
