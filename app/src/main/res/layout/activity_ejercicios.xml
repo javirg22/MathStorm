@@ -229,12 +229,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/logo"
+                android:tint="@color/azul_logo"
+                android:backgroundTint="@color/purpura"
                 app:fabSize="normal"
-
                 app:layout_anchor="@+id/bottom_app_bar"
-                android:backgroundTint="@color/verde"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                />
+            />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
