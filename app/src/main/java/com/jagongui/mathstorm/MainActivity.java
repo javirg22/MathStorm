@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     Button btn_exit;
+    Button btn_exc;
+    Button btn_exm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +28,21 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         btn_exit = findViewById(R.id.cerrarSesion);
+        btn_exc = findViewById(R.id.ExerciseButton);
+        btn_exm = findViewById(R.id.ExamplesButton);
 
+        btn_exc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, EjerciciosActivity.class));
+            }
+        });
+        btn_exm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, mainBab.class));
+            }
+        });
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,14 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity( new Intent(MainActivity.this, login.class));
             }
         });
-    }
-    public void openPrueba(View v){
-        Intent intent = new Intent(MainActivity.this, mainBab.class);
-        startActivity(intent);
-    }
-    public void openExamples(View v){
-        Intent intent = new Intent(MainActivity.this, EjerciciosActivity.class);
-        startActivity(intent);
     }
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
