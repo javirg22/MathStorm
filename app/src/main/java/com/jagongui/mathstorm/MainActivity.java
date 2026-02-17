@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -18,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     Button btn_exit;
-    Button btn_exc;
-    Button btn_exm;
+    CardView btn_exc;
+    CardView btn_exm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

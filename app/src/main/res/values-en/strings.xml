@@ -18,9 +18,7 @@
     <string name="LoginSuccessful">Login successful</string>
     <string name="LoginUnsusccessful">Error while login in, try other user or password</string>
     <string name="WelcomeMessage">Welcome to MathStrom</string>
-    <string name="agradecimiento">Photo by <a href="https://unsplash.com/es/@steve_g_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Steve Gribble</a> from <a href="https://unsplash.com/es/fotos/olas-oceanicas-agitadas-rompiendo-contra-la-costa-rocosa-al-atardecer-PvAC_yGyWHA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
-    <string name="ImgDesc">Agitated waves breaking into the rocky coast at dawn</string>
-    <string name="bienvenido">Welcome to MathStorm</string>
+     <string name="bienvenido">Welcome to MathStorm</string>
     <string name="frase1">Sign in to continue to the application</string>
     <string name="CorreoEjemplo">email@example.com</string>
     <string name="contraseña">Password</string>
@@ -46,6 +44,8 @@
     <string name="ans">Write your answer</string>
     <string name="ansC">Introduce the quotient</string>
     <string name="ansR">Write here the reminder of the operation</string>
+    <string name="underTextExample">Learn step by step with tutorials</string>
+    <string name="underTextExercise">Try your knoweldge</string>
 
 
 </resources>
