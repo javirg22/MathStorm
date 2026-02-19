@@ -21,7 +21,6 @@
             android:layout_gravity="bottom"
             app:fabAlignmentMode="center"
             app:menu="@menu/bottom_app_bar_menu"
-            app:navigationIcon="@drawable/outline_person_24"
             app:hideOnScroll="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"

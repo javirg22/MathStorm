@@ -1,5 +1,6 @@
 package com.jagongui.mathstorm;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -7,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.bottomappbar.BottomAppBar;
 
 public class SumaExample extends AppCompatActivity {
 
@@ -19,6 +22,16 @@ public class SumaExample extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
+
+        bottomAppBar.setOnMenuItemClickListener(item -> {
+            if (item.getItemId() == R.id.menu_perfil) {
+                Intent intent = new Intent(SumaExample.this, perfil.class);
+                startActivity(intent);
+                return true;
+            }
+            return false;
         });
     }
 }

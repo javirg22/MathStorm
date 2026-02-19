@@ -15,6 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class EjerciciosActivity extends AppCompatActivity {
 
@@ -24,6 +26,7 @@ public class EjerciciosActivity extends AppCompatActivity {
     CardView multiCv;
     CardView divCv;
     FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,15 +72,15 @@ public class EjerciciosActivity extends AppCompatActivity {
                 return true;
             }
             return false;
+        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showBottomSheetDialog();
             }
         });
-
     }
-    public void showBottomSheetDialog(){
+    private void showBottomSheetDialog () {
         View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_layout, null);
 
         // Crear el BottomSheetDialog
@@ -92,7 +95,7 @@ public class EjerciciosActivity extends AppCompatActivity {
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText( EjerciciosActivity.this, getString(R.string.Yaestas) , Toast.LENGTH_SHORT).show();
+                Toast.makeText(EjerciciosActivity.this, getString(R.string.Yaestas), Toast.LENGTH_SHORT).show();
             }
         });
 

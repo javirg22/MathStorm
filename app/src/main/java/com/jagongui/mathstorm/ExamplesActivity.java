@@ -14,6 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -68,6 +69,16 @@ public class ExamplesActivity extends AppCompatActivity {
             public void onClick(View v) {
                 showBottomSheetDialog();
             }
+        });
+        BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
+
+        bottomAppBar.setOnMenuItemClickListener(item -> {
+            if (item.getItemId() == R.id.menu_perfil) {
+                Intent intent = new Intent(ExamplesActivity.this, perfil.class);
+                startActivity(intent);
+                return true;
+            }
+            return false;
         });
 
     }
