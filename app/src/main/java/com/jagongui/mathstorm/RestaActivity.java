@@ -61,8 +61,8 @@ public class RestaActivity extends AppCompatActivity {
         int nTerm = new Random().nextInt(2) + 2;
         if(nTerm == 2) {
 
-            int a = new Random().nextInt(80) + 1;
-            int b = new Random().nextInt(a-10) + 1;
+            int a = new Random().nextInt(71) + 10;
+            int b = new Random().nextInt(a-9) + 1;
 
 
 
@@ -73,8 +73,8 @@ public class RestaActivity extends AppCompatActivity {
         } else {
 
             int a = new Random().nextInt(100) + 1;
-            int b = new Random().nextInt(a/2) + 1;
-            int c = new Random().nextInt(b/2) + 1;
+            int b = new Random().nextInt(a/2 - 1) + 1;
+            int c = new Random().nextInt(b - 1) + 1;
 
 
             correctAnswer = a - b - c;

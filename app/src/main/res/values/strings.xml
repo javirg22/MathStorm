@@ -7,7 +7,9 @@
     <string name="FirstButtonText_MainPage">Aprende</string>
     <string name="SecondButtonText_MainPage">Ejercicios</string>
     <string name="Aritm">Ejercicios Aritmética Básica</string>
+    <string name="AritmExp">Ejemplos Aritmética Básica</string>
     <string name="Aritm2">Ejercicios Aritmética Avanzada</string>
+    <string name="Aritm2Exp">Ejemplos Aritmética Avanzada</string>
     <string name="Add">Suma</string>
     <string name="Add_Text">Aprende a sumar</string>
     <string name="Subs">Resta</string>
