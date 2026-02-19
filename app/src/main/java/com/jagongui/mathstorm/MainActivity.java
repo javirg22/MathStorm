@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         btn_exm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, mainBab.class));
+                startActivity(new Intent(MainActivity.this, ExamplesActivity.class));
             }
         });
         btn_exit.setOnClickListener(new View.OnClickListener() {
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, mainBab.class));
+                startActivity(new Intent(MainActivity.this, ExamplesActivity.class));
             }
         });
         option3.setOnClickListener(new View.OnClickListener() {
