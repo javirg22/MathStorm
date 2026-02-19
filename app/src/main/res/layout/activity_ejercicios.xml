@@ -53,7 +53,7 @@
                         <ImageView
                             android:layout_width="82dp"
                             android:layout_height="82dp"
-                            android:src="@drawable/suma"
+                            android:src="@drawable/plus"
                             />
                         <LinearLayout
                             android:layout_width="250dp"
@@ -91,7 +91,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/resta"
+                        android:src="@drawable/minus"
                         />
                     <LinearLayout
                         android:layout_width="250dp"
@@ -128,7 +128,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/multi"
+                        android:src="@drawable/times"
                         />
                     <LinearLayout
                         android:layout_width="250dp"
@@ -165,7 +165,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/div"
+                        android:src="@drawable/divide"
                         />
                     <LinearLayout
                         android:layout_width="250dp"
