@@ -47,6 +47,7 @@
     <string name="ansR">Write here the reminder of the operation</string>
     <string name="underTextExample">Learn step by step with tutorials</string>
     <string name="underTextExercise">Try your knoweldge</string>
+    <string name="Yaestas">You\'re alredy in that page</string>
 
 
 </resources>

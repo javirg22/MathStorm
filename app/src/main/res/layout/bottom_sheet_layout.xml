@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/option1"
+        android:id="@+id/OpcionEjercicios"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/icono_fila1" />
 
     <TextView
-        android:id="@+id/option2"
+        android:id="@+id/OpcionEjemplos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@id/icono_fila2" />
 
     <TextView
-        android:id="@+id/option3"
+        android:id="@+id/OpcionPaginaPrincipal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
