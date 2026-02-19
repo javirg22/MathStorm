@@ -14,21 +14,23 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class EjerciciosActivity extends AppCompatActivity {
+public class ExamplesActivity extends AppCompatActivity {
 
 
     CardView sumaCv;
     CardView restaCv;
     CardView multiCv;
     CardView divCv;
+
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_ejercicios);
+        setContentView(R.layout.activity_examples);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -41,34 +43,26 @@ public class EjerciciosActivity extends AppCompatActivity {
         multiCv = findViewById(R.id.MultiCv);
         divCv = findViewById(R.id.DivsCv);
         fab = findViewById(R.id.fab);
+
         sumaCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, SumaActivity.class);
+            Intent intent = new Intent(ExamplesActivity.this, SumaExample.class);
             startActivity(intent);
         });
 
         restaCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, RestaActivity.class);
+            Intent intent = new Intent(ExamplesActivity.this, RestaActivity.class);
             startActivity(intent);
         });
 
         multiCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, MultiActivity.class);
+            Intent intent = new Intent(ExamplesActivity.this, MultiActivity.class);
             startActivity(intent);
         });
 
         divCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
+            Intent intent = new Intent(ExamplesActivity.this, DivsActivity.class);
             startActivity(intent);
         });
-        BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
-
-        bottomAppBar.setOnMenuItemClickListener(item -> {
-            if (item.getItemId() == R.id.menu_perfil) {
-                Intent intent = new Intent(EjerciciosActivity.this, perfil.class);
-                startActivity(intent);
-                return true;
-            }
-            return false;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,20 +86,20 @@ public class EjerciciosActivity extends AppCompatActivity {
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText( EjerciciosActivity.this, getString(R.string.Yaestas) , Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ExamplesActivity.this, EjerciciosActivity.class));
             }
         });
 
         option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EjerciciosActivity.this, ExamplesActivity.class));
+                Toast.makeText( ExamplesActivity.this, getString(R.string.Yaestas) , Toast.LENGTH_SHORT).show();
             }
         });
         option3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EjerciciosActivity.this, MainActivity.class));
+                startActivity(new Intent(ExamplesActivity.this, MainActivity.class));
             }
         });
     }

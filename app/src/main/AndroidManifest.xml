@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MathStorm">
         <activity
+            android:name=".ExamplesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SumaExample"
+            android:exported="false" />
+        <activity
             android:name=".DivsActivity"
             android:exported="false" />
         <activity
@@ -24,22 +30,19 @@
             android:name=".SumaActivity"
             android:exported="false" />
         <activity
-            android:name=".mainBab"
+            android:name=".login"
             android:exported="false" />
         <activity
             android:name=".signup"
             android:exported="false" />
         <activity
+            android:name=".EjerciciosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MathStorm.ActivityFix"/>
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.MathStorm.SplashScreen" >
-        </activity>
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".EjerciciosActivity"
-            android:exported="true">
+            android:theme="@style/Theme.MathStorm.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,7 +54,7 @@
             android:exported="false" />
         <activity
             android:name=".perfil"
-            android:exported="true" />
+            android:exported="false" />
     </application>
 
 </manifest>

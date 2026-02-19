@@ -38,7 +38,6 @@ public class SumaActivity extends AppCompatActivity {
 
             Button btnCheck = findViewById(R.id.btnCheck);
             Button btnNew = findViewById(R.id.btnNew);
-            ImageButton btnBack = findViewById(R.id.btnBack);
 
             generateNewQuestion();
 
@@ -56,21 +55,14 @@ public class SumaActivity extends AppCompatActivity {
                 }
             });
 
-            btnBack.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(SumaActivity.this, EjerciciosActivity.class);
-                    startActivity(intent);
-                }
-            });
         }
 
         private void generateNewQuestion() {
             int nTerm = new Random().nextInt(2) + 2;
             if(nTerm == 2) {
 
-                int a = new Random().nextInt(10) + 1;
-                int b = new Random().nextInt(10) + 1;
+                int a = new Random().nextInt(50) + 1;
+                int b = new Random().nextInt(50) + 1;
 
 
 
@@ -80,9 +72,9 @@ public class SumaActivity extends AppCompatActivity {
                 tilAnswer.setError(null);
             } else if(nTerm == 3){
 
-                int a = new Random().nextInt(10) + 1;
-                int b = new Random().nextInt(10) + 1;
-                int c = new Random().nextInt(10) + 1;
+                int a = new Random().nextInt(35) + 1;
+                int b = new Random().nextInt(40) + 1;
+                int c = new Random().nextInt(20) + 1;
 
 
                 correctAnswer = a + b + c;
@@ -103,7 +95,7 @@ public class SumaActivity extends AppCompatActivity {
                 return;
             }
 
-            if (Integer.parseInt(userAnswer) == correctAnswer) {
+            if (Math.abs(Integer.parseInt(userAnswer)) == correctAnswer) {
                 tilAnswer.setError(null);
                 Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
             } else {

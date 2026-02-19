@@ -5,8 +5,11 @@
     <string name="SecondUnderTitle_MainPage">aprende hoy o pon a prueba lo que sabes</string>
     <string name="FirstButtonText_MainPage">Aprende</string>
     <string name="SecondButtonText_MainPage">Ejercicios</string>
+    <string name="mainPage">Pagina principal</string>
     <string name="Aritm">Ejercicios Aritmética Básica</string>
+    <string name="AritmExp">Ejemplos Aritmética Básica</string>
     <string name="Aritm2">Ejercicios Aritmética Avanzada</string>
+    <string name="Aritm2Exp">Ejemplos Aritmética Avanzada</string>
     <string name="Add">Suma</string>
     <string name="Add_Text">Aprende a sumar</string>
     <string name="Subs">Resta</string>
@@ -41,7 +44,12 @@
     <string name="info">Informacion personal:</string>
     <string name="cerrarS">cerrar sesion</string>
     <string name="ans">Introduce tu respuesta</string>
+    <string name="ansC">Introduce el cociente de la division</string>
+    <string name="ansR">Introduce el resto de la operación</string>
     <string name="nuevapregunta">Crear Nueva Pregunta</string>
     <string name="comprobar">Comprobar</string>
+    <string name="underTextExample">Aprende paso a paso con tutoriales</string>
+    <string name="underTextExercise">Pon a prueba lo que sabes</string>
+    <string name="Yaestas">Ya estas en esa pagina</string>
 
 </resources>
