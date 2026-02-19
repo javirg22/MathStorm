@@ -32,7 +32,8 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.MathStorm.SplashScreen" />
+            android:theme="@style/Theme.MathStorm.SplashScreen" >
+        </activity>
         <activity
             android:name=".login"
             android:exported="false" />
@@ -48,6 +49,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".perfil"
+            android:exported="true" />
     </application>
 
 </manifest>

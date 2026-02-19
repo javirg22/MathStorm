@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".EjerciciosActivity"
     android:layout_gravity="center"
-
+    tools:theme="@style/Base.Theme.MathStorm"
     >
 
 
@@ -217,14 +217,13 @@
                 android:layout_gravity="bottom"
                 app:fabAlignmentMode="center"
                 app:menu="@menu/bottom_app_bar_menu"
-                app:navigationIcon="@drawable/outline_person_24"
                 app:hideOnScroll="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
-                app:backgroundTint="@color/verde"
-                />
+                app:backgroundTint="@color/verde">
+            </com.google.android.material.bottomappbar.BottomAppBar>
 
             <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
 
