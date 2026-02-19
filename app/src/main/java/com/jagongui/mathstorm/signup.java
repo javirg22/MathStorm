@@ -52,7 +52,7 @@ public class signup extends AppCompatActivity {
                 String emailUser = mail.getText().toString().trim();
                 String passUser = password.getText().toString().trim();
 
-                if(nameUser.isEmpty() && emailUser.isEmpty() && passUser.isEmpty()){
+                if(nameUser.isEmpty() || emailUser.isEmpty() || passUser.isEmpty()){
                     Toast.makeText(signup.this, "Rellena la informacion pedida", Toast.LENGTH_SHORT).show();
                 }else{
                     registerUser(nameUser,emailUser,passUser);

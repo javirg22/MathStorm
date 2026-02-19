@@ -73,8 +73,8 @@ public class RestaActivity extends AppCompatActivity {
         } else {
 
             int a = new Random().nextInt(100) + 1;
-            int b = new Random().nextInt(a/2 - 1) + 1;
-            int c = new Random().nextInt(b - 1) + 1;
+            int b = new Random().nextInt(a/2 -1) + 1;
+            int c = new Random().nextInt(b-1) + 1;
 
 
             correctAnswer = a - b - c;
@@ -95,7 +95,7 @@ public class RestaActivity extends AppCompatActivity {
             return;
         }
 
-        if (Integer.parseInt(userAnswer) == correctAnswer) {
+        if (Math.abs(Integer.parseInt(userAnswer)) == correctAnswer) {
             tilAnswer.setError(null);
             Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
         } else {

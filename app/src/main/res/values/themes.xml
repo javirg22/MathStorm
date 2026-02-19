@@ -3,7 +3,9 @@
     <style name="Base.Theme.MathStorm" parent="Theme.Material3.DayNight.NoActionBar">
 
     </style>
-
+    <style name="Theme.MathStorm.ActivityFix" parent="Base.Theme.MathStorm">
+        <item name="android:navigationBarColor">@color/verde</item>
+    </style>
     <style name="Theme.MathStorm.SplashScreen" parent="Theme.MaterialComponents.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
     </style>

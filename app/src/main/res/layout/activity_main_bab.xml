@@ -5,48 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Contenido principal -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinator"
         android:layout_width="match_parent"
-        android:layout_height="92dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-
+        app:layout_constraintRight_toRightOf="parent"
+        >
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottom_app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             app:fabAlignmentMode="center"
-            android:backgroundTint="@color/gris1"
             app:menu="@menu/bottom_app_bar_menu"
+            app:navigationIcon="@drawable/outline_person_24"
+            app:hideOnScroll="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
-            app:navigationIcon="@drawable/burguer"
+            app:backgroundTint="@color/verde"
             />
-
-
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:src="@drawable/add"
+            android:contentDescription="floatingButton"
+            android:src="@drawable/logo"
+            android:tint="@color/azul_logo"
+            android:backgroundTint="@color/purpura"
             app:fabSize="normal"
             app:layout_anchor="@+id/bottom_app_bar"
-            app:tint="@android:color/white" />
-
-
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -95,7 +95,7 @@ public class SumaActivity extends AppCompatActivity {
                 return;
             }
 
-            if (Integer.parseInt(userAnswer) == correctAnswer) {
+            if (Math.abs(Integer.parseInt(userAnswer)) == correctAnswer) {
                 tilAnswer.setError(null);
                 Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
             } else {
