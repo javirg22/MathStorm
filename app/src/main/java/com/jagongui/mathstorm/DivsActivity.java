@@ -90,7 +90,7 @@ public class DivsActivity extends AppCompatActivity {
                 ? etAnswerR.getText().toString()
                 : "";
 
-        if (userAnswer.isEmpty()) {
+        if (userAnswer.isEmpty() || userAnswerResto.isEmpty()) {
             tilAnswer.setError("Introduce una respuesta");
             return;
         }

@@ -6,6 +6,7 @@
     <string name="SecondUnderTitle_MainPage">aprende hoy o pon a prueba lo que sabes</string>
     <string name="FirstButtonText_MainPage">Aprende</string>
     <string name="SecondButtonText_MainPage">Ejercicios</string>
+    <string name="mainPage">Pagina principal</string>
     <string name="Aritm">Ejercicios Aritmética Básica</string>
     <string name="Aritm2">Ejercicios Aritmética Avanzada</string>
     <string name="Add">Suma</string>
