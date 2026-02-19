@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- TARJETA PERFIL -->
+
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -29,14 +29,14 @@
                 android:padding="16dp"
                 android:gravity="center_vertical">
 
-                <!-- ICONO PERFIL -->
+
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/prueba_usuario"
                     android:padding="12dp" />
 
-                <!-- TEXTO PERFIL -->
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -76,7 +76,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- TITULO -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +86,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_gravity="center" />
 
-                <!-- EJEMPLOS VISTOS -->
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="200dp"
                     android:layout_height="120dp"
@@ -117,6 +116,7 @@
                             android:layout_marginTop="6dp" />
 
                         <TextView
+                            android:id="@+id/EjemploV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Nº Ejemplos"
@@ -124,7 +124,6 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- EJERCICIOS COMPLETADOS -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="200dp"
                     android:layout_height="120dp"
@@ -154,6 +153,7 @@
                             android:layout_marginTop="6dp" />
 
                         <TextView
+                            android:id="@+id/EjemploC"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Nº Ejercicios"
@@ -161,7 +161,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- RACHA -->
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="200dp"
                     android:layout_height="120dp"
@@ -176,6 +176,11 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:gravity="center">
+                        <ImageView
+                            android:id="@+id/fuego"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/fuego" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -184,6 +189,7 @@
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/racha"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=" 0 días"
@@ -217,7 +223,7 @@
                         android:orientation="vertical"
                         android:gravity="center">
 
-                <!-- INFORMACIÓN PERSONAL -->
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

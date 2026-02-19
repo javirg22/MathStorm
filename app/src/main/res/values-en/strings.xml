@@ -21,7 +21,8 @@
     <string name="LoginSuccessful">Login successful</string>
     <string name="LoginUnsusccessful">Error while login in, try other user or password</string>
     <string name="WelcomeMessage">Welcome to MathStrom</string>
-     <string name="bienvenido">Welcome to MathStorm</string>
+    <string name="ImgDesc">Agitated waves breaking into the rocky coast at dawn</string>
+    <string name="bienvenido">Welcome to MathStorm</string>
     <string name="frase1">Sign in to continue to the application</string>
     <string name="CorreoEjemplo">email@example.com</string>
     <string name="contraseña">Password</string>
@@ -37,7 +38,7 @@
     <string name="correo">Email:</string>
     <string name="con2">Confirm your password:</string>
     <string name="estadisticas">Your Statistics:</string>
-    <string name="ejemplosV">Examples viewed:</string>
+    <string name="ejemplosV"> Last Example viewed:</string>
     <string name="ejerciciosC">Completed exercises:</string>
     <string name="racha">Current streak:</string>
     <string name="info">Personal information:</string>

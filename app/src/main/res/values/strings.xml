@@ -21,6 +21,7 @@
     <string name="LoginSuccessful">Sesion iniciada correctamente</string>
     <string name="LoginUnsusccessful">Error al iniciar sesión, intente otro usuario o contraseña</string>
     <string name="WelcomeMessage">Bienvenido a MathStorm</string>
+    <string name="ImgDesc">Olas oceánicas agitadas rompiendo contra la costa rocosa al atardecer</string>
     <string name="bienvenido">Bienvenido a MathStorm</string>
     <string name="frase1">Inicia sesion para continuar a la aplicacion</string>
     <string name="CorreoEjemplo">Correo@ejemplo.com</string>
@@ -42,7 +43,7 @@
     <string name="nuevapregunta">Crear Nueva Pregunta</string>
     <string name="comprobar">Comprobar</string>
     <string name="estadisticas">Tus Estadísticas:</string>
-    <string name="ejemplosV">Ejemplos vistos:</string>
+    <string name="ejemplosV"> Ultimo Ejemplo visto:</string>
     <string name="ejerciciosC">Ejercicios completados:</string>
     <string name="racha">Racha actual:</string>
     <string name="info">Informacion personal:</string>
