@@ -30,9 +30,6 @@
             android:name=".SumaActivity"
             android:exported="false" />
         <activity
-            android:name=".mainBab"
-            android:exported="false" />
-        <activity
             android:name=".login"
             android:exported="false" />
         <activity
