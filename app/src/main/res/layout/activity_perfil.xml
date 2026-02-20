@@ -44,6 +44,7 @@
                     android:layout_marginStart="16dp">
 
                     <TextView
+                        android:id="@+id/User"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nom"
@@ -52,6 +53,7 @@
                         android:textColor="#000" />
 
                     <TextView
+                        android:id="@+id/Email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/CorreoEjemplo"
@@ -198,64 +200,13 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/info"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#000"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="16dp"
-                    android:layout_gravity="center"/>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="120dp"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    app:cardBackgroundColor="@color/gris2">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre: Juan"
-                    android:textSize="16sp"
-                    android:textColor="#333"
-                    android:layout_marginBottom="6dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Apellidos: Pérez García"
-                    android:textSize="16sp"
-                    android:textColor="#333"
-                    android:layout_marginBottom="6dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Curso: 2º ESO"
-                    android:textSize="16sp"
-                    android:textColor="#333"
-                    android:layout_marginBottom="12dp"/>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
                 <Button
-                    android:id="@+id/buttonSignup"
+                    android:id="@+id/buttonLogOut"
                     style="@style/button"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="45dp"
                     android:text="@string/cerrarS"
                     android:onClick="openSignup"
                     android:backgroundTint="@color/rojo"/>

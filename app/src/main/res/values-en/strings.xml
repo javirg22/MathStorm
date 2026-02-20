@@ -51,6 +51,11 @@
     <string name="underTextExample">Learn step by step with tutorials</string>
     <string name="underTextExercise">Try your knoweldge</string>
     <string name="Yaestas">You\'re alredy in that page</string>
+    <string name="ultimoVistoSuma">Add</string>
+    <string name="ultimoVistoResta">Substract</string>
+    <string name="ultimoVistoMultiplicacion">Multiplication</string>
+    <string name="ultimoVistoDivision">Divisions</string>
+    <string name="dias">days</string>
 
 
 </resources>

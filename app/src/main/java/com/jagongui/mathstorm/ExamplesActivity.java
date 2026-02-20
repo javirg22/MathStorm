@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,7 +27,8 @@ public class ExamplesActivity extends AppCompatActivity {
     CardView restaCv;
     CardView multiCv;
     CardView divCv;
-
+    FirebaseFirestore db;
+    String userId;
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,25 +47,26 @@ public class ExamplesActivity extends AppCompatActivity {
         multiCv = findViewById(R.id.MultiCv);
         divCv = findViewById(R.id.DivsCv);
         fab = findViewById(R.id.fab);
-
+        db = FirebaseFirestore.getInstance();
+        userId = FirebaseAuth.getInstance().getUid();
         sumaCv.setOnClickListener(v -> {
-            Intent intent = new Intent(ExamplesActivity.this, SumaExample.class);
-            startActivity(intent);
+            saveLastExample("suma");
+            startActivity(new Intent(ExamplesActivity.this, SumaExample.class));
         });
 
         restaCv.setOnClickListener(v -> {
-            Intent intent = new Intent(ExamplesActivity.this, RestaActivity.class);
-            startActivity(intent);
+            saveLastExample("resta");
+            startActivity( new Intent(ExamplesActivity.this, RestaActivity.class));
         });
 
         multiCv.setOnClickListener(v -> {
-            Intent intent = new Intent(ExamplesActivity.this, MultiActivity.class);
-            startActivity(intent);
+            saveLastExample("multiplicacion");
+            startActivity(new Intent(ExamplesActivity.this, MultiActivity.class));
         });
 
         divCv.setOnClickListener(v -> {
-            Intent intent = new Intent(ExamplesActivity.this, DivsActivity.class);
-            startActivity(intent);
+            saveLastExample("division");
+            startActivity(new Intent(ExamplesActivity.this, DivsActivity.class));
         });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,5 +117,12 @@ public class ExamplesActivity extends AppCompatActivity {
                 startActivity(new Intent(ExamplesActivity.this, MainActivity.class));
             }
         });
+    }
+    private void saveLastExample(String exampleName) {
+        if (userId == null) return;
+
+        db.collection("user")
+                .document(userId)
+                .update("lastExampleViewed", exampleName);
     }
 }
