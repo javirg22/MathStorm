@@ -64,8 +64,6 @@ public class RestaActivity extends AppCompatActivity {
             int a = new Random().nextInt(71) + 10;
             int b = new Random().nextInt(a-9) + 1;
 
-
-
             correctAnswer = a - b;
             tvOperation.setText(a + " - " + b + " = ?");
             etAnswer.setText("");
@@ -75,7 +73,6 @@ public class RestaActivity extends AppCompatActivity {
             int a = new Random().nextInt(100) + 1;
             int b = new Random().nextInt(a/2 -1) + 1;
             int c = new Random().nextInt(b-1) + 1;
-
 
             correctAnswer = a - b - c;
             tvOperation.setText(a + " - " + b + " - " + c + " = ?");
