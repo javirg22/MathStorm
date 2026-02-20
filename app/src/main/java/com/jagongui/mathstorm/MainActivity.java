@@ -24,7 +24,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
-    Button btn_exit;
     CardView btn_exc;
     CardView btn_exm;
 
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
 
         mAuth = FirebaseAuth.getInstance();
-        btn_exit = findViewById(R.id.cerrarSesion);
         btn_exc = findViewById(R.id.ExerciseButton);
         btn_exm = findViewById(R.id.ExamplesButton);
         fab = findViewById(R.id.fab);
@@ -60,14 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ExamplesActivity.class));
             }
         });
-        btn_exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mAuth.signOut();
-                finish();
-                startActivity( new Intent(MainActivity.this, login.class));
-            }
-        });
+
         BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
         bottomAppBar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.menu_perfil) {

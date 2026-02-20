@@ -51,4 +51,10 @@
     <string name="underTextExample">Aprende paso a paso con tutoriales</string>
     <string name="underTextExercise">Pon a prueba lo que sabes</string>
     <string name="Yaestas">Ya estas en esa pagina</string>
+    <string name="ultimoVistoSuma">Suma</string>
+    <string name="ultimoVistoResta">Resta</string>
+    <string name="ultimoVistoMultiplicacion">Multiplicación</string>
+    <string name="ultimoVistoDivision">División</string>
+    <string name="ultimoVistoDefault" translatable="false">___</string>
+    <string name="dias">dias</string>
 </resources>

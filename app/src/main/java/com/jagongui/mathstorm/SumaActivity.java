@@ -23,6 +23,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Random;
@@ -110,6 +111,7 @@ public class SumaActivity extends AppCompatActivity {
                 tilAnswer.setError(null);
                 Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
                 updateDailyStreak();
+                userRef.update("exercisesCompleted", FieldValue.increment(1));
             } else {
                 tilAnswer.setError("❌ Incorrecto");
             }
@@ -171,17 +173,14 @@ public class SumaActivity extends AppCompatActivity {
                     // mismo día → no se suma
                     return;
                 }
-
                 if (maxStreak == null || streak > maxStreak) {
                     maxStreak = streak;
                 }
-
                 userRef.update(
                         "streak", streak,
                         "lastLoginDate", today,
                         "maxStreak", maxStreak
                 );
-
             } else {
                 // Primera vez
                 HashMap<String, Object> data = new HashMap<>();
