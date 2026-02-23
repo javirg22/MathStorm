@@ -64,52 +64,22 @@ public class RootActivity extends AppCompatActivity {
         if(nTerm == 2) {
 
             int a = new Random().nextInt(10) + 1;
-            switch (a){
-                case 1: raiz = 4;
-                case 2: raiz = 9;
-                case 3: raiz = 16;
-                case 4: raiz = 25;
-                case 5: raiz = 36;
-                case 6: raiz = 48;
-                case 7: raiz = 64;
-                case 8: raiz = 81;
-                case 9: raiz = 100;
-            }
+            raiz = a * a;
 
 
 
-            correctAnswer = (int) Math.sqrt(raiz);
+            correctAnswer = a;
             tvOperation.setText("2√"+raiz+" = ?");
             etAnswer.setText("");
             tilAnswer.setError(null);
         } else {
 
             int a = new Random().nextInt(10) + 1;
-            switch (a){
-                case 1: raiz = 4;
-                case 2: raiz = 9;
-                case 3: raiz = 16;
-                case 4: raiz = 25;
-                case 5: raiz = 36;
-                case 6: raiz = 48;
-                case 7: raiz = 64;
-                case 8: raiz = 81;
-                case 9: raiz = 100;
-            }
-            int b = new Random().nextInt(10) + 1;
-            switch (b){
-                case 1: raiz2 = 4;
-                case 2: raiz2 = 9;
-                case 3: raiz2 = 16;
-                case 4: raiz2 = 25;
-                case 5: raiz2 = 36;
-                case 6: raiz2 = 48;
-                case 7: raiz2 = 64;
-                case 8: raiz2 = 81;
-                case 9: raiz2 = 100;
-            }
+            raiz = a * a;
+            int b = new Random().nextInt(9) + 2;
+            raiz2 = b * b;
 
-            correctAnswer = (int) (Math.sqrt(raiz) + Math.sqrt(raiz2));
+            correctAnswer = a + b;
             tvOperation.setText("2√"+raiz+" + 2√"+raiz2+" = ?");
             etAnswer.setText("");
             tilAnswer.setError(null);

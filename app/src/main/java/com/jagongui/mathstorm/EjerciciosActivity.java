@@ -61,12 +61,12 @@ public class EjerciciosActivity extends AppCompatActivity {
         });
 
         rootCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
+            Intent intent = new Intent(EjerciciosActivity.this, RootActivity.class);
             startActivity(intent);
         });
 
         expCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
+            Intent intent = new Intent(EjerciciosActivity.this, ExpActivity.class);
             startActivity(intent);
         });
 
