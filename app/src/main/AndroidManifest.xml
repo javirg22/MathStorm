@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MathStorm">
         <activity
+            android:name=".activity_divs_example"
+            android:exported="false" />
+        <activity
+            android:name=".activity_multi_example"
+            android:exported="false" />
+        <activity
+            android:name=".activity_resta_example"
+            android:exported="false" />
+        <activity
             android:name=".ExpActivity"
             android:exported="false" />
         <activity
@@ -22,29 +31,28 @@
             android:exported="false" />
         <activity
             android:name=".SumaExample"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".DivsActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".MultiActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".RestaActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".SumaActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".login"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".signup"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".EjerciciosActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MathStorm.ActivityFix"/>
+            android:exported="false"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -57,10 +65,10 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".perfil"
-            android:exported="false" />
+            android:exported="false"/>
     </application>
 
 </manifest>

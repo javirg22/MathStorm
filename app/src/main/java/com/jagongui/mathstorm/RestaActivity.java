@@ -100,17 +100,17 @@ public class RestaActivity extends AppCompatActivity {
                 : "";
 
         if (userAnswer.isEmpty()) {
-            tilAnswer.setError("Introduce una respuesta");
+            tilAnswer.setError(getString(R.string.introduceAnswer));
             return;
         }
 
         if (Math.abs(Integer.parseInt(userAnswer)) == correctAnswer) {
             tilAnswer.setError(null);
-            Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show();
             updateDailyStreak();
             userRef.update("exercisesCompleted", FieldValue.increment(1));
         } else {
-            tilAnswer.setError("❌ Incorrecto");
+            tilAnswer.setError(getString(R.string.incorrect));
         }
     }
     private String getTodayDate() {

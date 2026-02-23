@@ -35,12 +35,6 @@ public class ExamplesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_examples);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
 
         sumaCv = findViewById(R.id.SumaCv);
         restaCv = findViewById(R.id.RestaCv);
@@ -56,17 +50,17 @@ public class ExamplesActivity extends AppCompatActivity {
 
         restaCv.setOnClickListener(v -> {
             saveLastExample("resta");
-            startActivity( new Intent(ExamplesActivity.this, RestaActivity.class));
+            startActivity( new Intent(ExamplesActivity.this, activity_resta_example.class));
         });
 
         multiCv.setOnClickListener(v -> {
             saveLastExample("multiplicacion");
-            startActivity(new Intent(ExamplesActivity.this, MultiActivity.class));
+            startActivity(new Intent(ExamplesActivity.this, activity_multi_example.class));
         });
 
         divCv.setOnClickListener(v -> {
             saveLastExample("division");
-            startActivity(new Intent(ExamplesActivity.this, DivsActivity.class));
+            startActivity(new Intent(ExamplesActivity.this, activity_divs_example.class));
         });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
