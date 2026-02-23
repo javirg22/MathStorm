@@ -11,4 +11,6 @@
     <color name="rojo">#DA2F1C</color>
     <color name="gris3">#F8EFF1</color>
     <color name="azul_logo">#CADAFA</color>
+    <color name="gris_fondo">#666666</color>
+    <color name="verde_modoOscuro">#527E10</color>
 </resources>

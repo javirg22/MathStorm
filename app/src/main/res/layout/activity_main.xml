@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Title_MainPage"
         android:textSize="50sp"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/Icono"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -32,13 +33,16 @@
         android:layout_height="wrap_content"
         android:text="@string/UnderTitle_MainPage"
         android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/Title"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
     <TextView
         android:id="@+id/SecondUnderTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="@string/SecondUnderTitle_MainPage"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/FirstUnderTitle"
