@@ -18,6 +18,10 @@
     <string name="Mult_Text">To understand the multiplication usage</string>
     <string name="Div">Divide</string>
     <string name="Div_Text">Comprehend the quotient and remainder of</string>
+    <string name="Exp">Exponents</string>
+    <string name="Exp_Text">Realize additive multiplications</string>
+    <string name="Root">Roots</string>
+    <string name="Root_Text">Calculate the next step of divisions</string>
     <string name="LoginSuccessful">Login successful</string>
     <string name="LoginUnsusccessful">Error while login in, try other user or password</string>
     <string name="WelcomeMessage">Welcome to MathStrom</string>

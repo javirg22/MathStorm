@@ -10,7 +10,7 @@
         android:id="@+id/tvOperation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="12 - 5 = ?"
+        android:text="√9 = ?"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,4 +66,3 @@
         android:layout_marginTop="12dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

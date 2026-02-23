@@ -25,6 +25,8 @@ public class EjerciciosActivity extends AppCompatActivity {
     CardView restaCv;
     CardView multiCv;
     CardView divCv;
+    CardView rootCv;
+    CardView expCv;
     FloatingActionButton fab;
 
     @Override
@@ -43,6 +45,9 @@ public class EjerciciosActivity extends AppCompatActivity {
         restaCv = findViewById(R.id.RestaCv);
         multiCv = findViewById(R.id.MultiCv);
         divCv = findViewById(R.id.DivsCv);
+        rootCv = findViewById(R.id.RootCv);
+        expCv = findViewById(R.id.ExpCv);
+
         fab = findViewById(R.id.fab);
         sumaCv.setOnClickListener(v -> {
             Intent intent = new Intent(EjerciciosActivity.this, SumaActivity.class);
@@ -82,6 +87,16 @@ public class EjerciciosActivity extends AppCompatActivity {
     }
     private void showBottomSheetDialog () {
         View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_layout, null);
+
+        rootCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, RootActivity.class);
+            startActivity(intent);
+        });
+
+        expCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, ExpActivity.class);
+            startActivity(intent);
+        });
 
         // Crear el BottomSheetDialog
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
