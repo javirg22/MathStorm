@@ -10,9 +10,6 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -23,10 +20,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class ExamplesActivity extends AppCompatActivity {
 
 
-    CardView sumaCv;
-    CardView restaCv;
-    CardView multiCv;
-    CardView divCv;
+    CardView sumaCv,restaCv,multiCv,divCv,rootCv,PotenciaCv;
     FirebaseFirestore db;
     String userId;
     FloatingActionButton fab;
@@ -40,6 +34,8 @@ public class ExamplesActivity extends AppCompatActivity {
         restaCv = findViewById(R.id.RestaCv);
         multiCv = findViewById(R.id.MultiCv);
         divCv = findViewById(R.id.DivsCv);
+        rootCv = findViewById(R.id.RaicesCv);
+        PotenciaCv = findViewById(R.id.PotenciaCv);
         fab = findViewById(R.id.fab);
         db = FirebaseFirestore.getInstance();
         userId = FirebaseAuth.getInstance().getUid();
@@ -47,20 +43,27 @@ public class ExamplesActivity extends AppCompatActivity {
             saveLastExample("suma");
             startActivity(new Intent(ExamplesActivity.this, SumaExample.class));
         });
-
         restaCv.setOnClickListener(v -> {
             saveLastExample("resta");
-            startActivity( new Intent(ExamplesActivity.this, activity_resta_example.class));
+            startActivity( new Intent(ExamplesActivity.this, resta_example.class));
         });
 
         multiCv.setOnClickListener(v -> {
             saveLastExample("multiplicacion");
-            startActivity(new Intent(ExamplesActivity.this, activity_multi_example.class));
+            startActivity(new Intent(ExamplesActivity.this, multi_example.class));
         });
 
         divCv.setOnClickListener(v -> {
             saveLastExample("division");
-            startActivity(new Intent(ExamplesActivity.this, activity_divs_example.class));
+            startActivity(new Intent(ExamplesActivity.this, divs_example.class));
+        });
+        rootCv.setOnClickListener(v -> {
+            saveLastExample("raices");
+            startActivity(new Intent(ExamplesActivity.this, root_example.class));
+        });
+        PotenciaCv.setOnClickListener(v -> {
+            saveLastExample("potencias");
+            startActivity(new Intent(ExamplesActivity.this, exp_example.class));
         });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

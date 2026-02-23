@@ -99,6 +99,26 @@
     <string name="secondStepExpD">We divided the 13 into 3 equal groups.</string>
     <string name="thirdStepD">Step 3: Calculate the result</string>
     <string name="resultFinishD">If 4 × 3 = 12 and there is a remainder of 1, then: 13 ÷ 3 = 4 and a remainder of 1</string>
+    <string name="Raiz">Base Root</string>
+    <string name="firstStepRa">Step 1: Understand the root</string>
+    <string name="firstStepExpRa">Finding a square root is finding a number that, when multiplied by itself, gives another number. Here we want to know the square root of 13.</string>
+    <string name="secondStepRa">Step 2: Find the nearest number</string>
+    <string name="secondStepExpRa">We are looking for a number that, when multiplied by itself, does not exceed 13. We know that:</string>
+    <string name="thirdStepRa">Step 3: Calculate the remainder</string>
+    <string name="thirdStepExpRa">We subtract to see how much is missing:</string>
+    <string name="resultRa">Result</string>
+    <string name="resultFinishRa">The square root of 13 is: √13 = 3 with a remainder of 4</string>
+    <string name="Potencia">Basic Exponential</string>
+    <string name="firstStepP">Step 1: Understanding Exponentials</string>
+    <string name="firstStepExpP">An exponential is multiplying the same number several times. Here we are going to calculate 3² (3 raised to the power of 2).</string>
+    <string name="secondStepP">Step 2: Multiply the base</string>
+    <string name="secondStepExpP">The base is 3 and the exponent is 2, so we multiply 3 by itself twice:</string>
+    <string name="thirdStepP">Step 3: Calculate the result</string>
+    <string name="thirdStepExpP">We do the multiplication:</string>
+    <string name="resultP">Result</string>
+    <string name="resultFinishP">Therefore: 3² = 9</string>
+    <string name="ultimoVistoRaices">Root</string>
+    <string name="ultimoVistoPotencias">Exponential</string>
 
 
 </resources>
