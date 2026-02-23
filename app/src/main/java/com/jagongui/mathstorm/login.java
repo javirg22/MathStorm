@@ -44,9 +44,10 @@ public class login extends AppCompatActivity {
                 String user = username.getText().toString().trim();
                 String pass = password.getText().toString().trim();
 
-                if(user.isEmpty() && pass.isEmpty()){
+                if(user.isEmpty() || pass.isEmpty()){
                     Toast.makeText(login.this, "Introduzca sus credenciales", Toast.LENGTH_SHORT).show();
                 }else{
+
                     loginUser(user,pass);
                 }
             }

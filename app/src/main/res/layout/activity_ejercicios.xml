@@ -7,19 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".EjerciciosActivity"
     android:layout_gravity="center"
-
+    tools:theme="@style/Base.Theme.MathStorm"
     >
-
-
-
-
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/coordinator"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="64dp"
             >
-
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
@@ -30,10 +24,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-
                 >
 
 
+                <TextView
+                    android:layout_marginStart="12dp"
+                    android:text="@string/Aritm"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/SumaCv"
@@ -69,10 +70,8 @@
                                 android:text="@string/Add_Text"/>
 
                         </LinearLayout>
-
                     </LinearLayout>
             </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
                 android:id="@+id/RestaCv"
@@ -107,7 +106,6 @@
                             android:text="@string/Subs_Text"/>
 
                     </LinearLayout>
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -142,9 +140,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="@string/Mult_Text"/>
-
                     </LinearLayout>
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -179,9 +175,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:text="@string/Div_Text"/>
-
                     </LinearLayout>
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -268,11 +262,16 @@
 
 
 
+            <TextView
+                android:layout_marginStart="12dp"
+                android:text="@string/Aritm2"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
         </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-
-
-
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottom_app_bar"
                 android:layout_width="match_parent"
@@ -280,17 +279,12 @@
                 android:layout_gravity="bottom"
                 app:fabAlignmentMode="center"
                 app:menu="@menu/bottom_app_bar_menu"
-                app:navigationIcon="@drawable/outline_person_24"
                 app:hideOnScroll="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
-                app:backgroundTint="@color/verde"
-                />
+                app:backgroundTint="@color/verde">
+            </com.google.android.material.bottomappbar.BottomAppBar>
 
-            <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
-
+            <!--style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
@@ -302,19 +296,5 @@
                 app:layout_anchor="@+id/bottom_app_bar"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
             />
-
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

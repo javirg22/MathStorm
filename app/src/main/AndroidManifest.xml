@@ -36,20 +36,15 @@
             android:name=".SumaActivity"
             android:exported="false" />
         <activity
-            android:name=".mainBab"
-            android:exported="false" />
-        <activity
             android:name=".login"
             android:exported="false" />
         <activity
             android:name=".signup"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".EjerciciosActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MathStorm.ActivityFix"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -60,6 +55,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perfil"
+            android:exported="false" />
     </application>
 
 </manifest>

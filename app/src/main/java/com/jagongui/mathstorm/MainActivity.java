@@ -3,21 +3,31 @@ package com.jagongui.mathstorm;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
-    Button btn_exit;
+    CardView btn_exc;
+    CardView btn_exm;
+
+    FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,15 +35,38 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
 
         mAuth = FirebaseAuth.getInstance();
-        btn_exit = findViewById(R.id.cerrarSesion);
+        btn_exc = findViewById(R.id.ExerciseButton);
+        btn_exm = findViewById(R.id.ExamplesButton);
+        fab = findViewById(R.id.fab);
 
-        btn_exit.setOnClickListener(new View.OnClickListener() {
+        btn_exc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.signOut();
-                finish();
-                startActivity( new Intent(MainActivity.this, login.class));
+                startActivity(new Intent(MainActivity.this, EjerciciosActivity.class));
             }
+        });
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showBottomSheetDialog();
+            }
+        });
+        btn_exm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ExamplesActivity.class));
+            }
+        });
+
+        BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
+        bottomAppBar.setOnMenuItemClickListener(item -> {
+            if (item.getItemId() == R.id.menu_perfil) {
+                Intent intent = new Intent(MainActivity.this, perfil.class);
+                startActivity(intent);
+                return true;
+            }
+            return false;
         });
     }
     public void openPrueba(View v){

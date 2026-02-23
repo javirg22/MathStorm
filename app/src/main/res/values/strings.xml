@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">MathStorm</string>
-
     <string name="Title_MainPage">Aprendizaje</string>
     <string name="UnderTitle_MainPage">Elige tu camino:</string>
     <string name="SecondUnderTitle_MainPage">aprende hoy o pon a prueba lo que sabes</string>
     <string name="FirstButtonText_MainPage">Aprende</string>
     <string name="SecondButtonText_MainPage">Ejercicios</string>
+    <string name="mainPage">Pagina principal</string>
     <string name="Aritm">Ejercicios Aritmética Básica</string>
     <string name="AritmExp">Ejemplos Aritmética Básica</string>
     <string name="Aritm2">Ejercicios Aritmética Avanzada</string>
@@ -25,7 +25,6 @@
     <string name="LoginSuccessful">Sesion iniciada correctamente</string>
     <string name="LoginUnsusccessful">Error al iniciar sesión, intente otro usuario o contraseña</string>
     <string name="WelcomeMessage">Bienvenido a MathStorm</string>
-    <string name="agradecimiento">Foto de <a href="https://unsplash.com/es/@steve_g_?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Steve Gribble</a> en <a href="https://unsplash.com/es/fotos/olas-oceanicas-agitadas-rompiendo-contra-la-costa-rocosa-al-atardecer-PvAC_yGyWHA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
     <string name="ImgDesc">Olas oceánicas agitadas rompiendo contra la costa rocosa al atardecer</string>
     <string name="bienvenido">Bienvenido a MathStorm</string>
     <string name="frase1">Inicia sesion para continuar a la aplicacion</string>
@@ -48,9 +47,18 @@
     <string name="nuevapregunta">Crear Nueva Pregunta</string>
     <string name="comprobar">Comprobar</string>
     <string name="estadisticas">Tus Estadísticas:</string>
-    <string name="ejemplosV">Ejemplos vistos:</string>
+    <string name="ejemplosV"> Ultimo Ejemplo visto:</string>
     <string name="ejerciciosC">Ejercicios completados:</string>
     <string name="racha">Racha actual:</string>
     <string name="info">Informacion personal:</string>
     <string name="cerrarS">cerrar sesion</string>
+    <string name="underTextExample">Aprende paso a paso con tutoriales</string>
+    <string name="underTextExercise">Pon a prueba lo que sabes</string>
+    <string name="Yaestas">Ya estas en esa pagina</string>
+    <string name="ultimoVistoSuma">Suma</string>
+    <string name="ultimoVistoResta">Resta</string>
+    <string name="ultimoVistoMultiplicacion">Multiplicación</string>
+    <string name="ultimoVistoDivision">División</string>
+    <string name="ultimoVistoDefault" translatable="false">___</string>
+    <string name="dias">dias</string>
 </resources>
