@@ -99,5 +99,25 @@
     <string name="thirdStepExpD">Sumamos lo que se repartió.</string>
     <string name="resultD">Resultado</string>
     <string name="resultFinishD">Si 4 × 3 = 12 y sobra 1, entonces: 13 ÷ 3 = 4 y resto 1</string>
+    <string name="Raiz">Raíz Básica</string>
+    <string name="firstStepRa">Paso 1: Entender la raíz</string>
+    <string name="firstStepExpRa">Sacar una raíz es encontrar un número que, al multiplicarse por sí mismo, dé otro número. Aquí queremos saber cuál es la raíz cuadrada de 13.</string>
+    <string name="secondStepRa">Paso 2: Buscar el número más cercano</string>
+    <string name="secondStepExpRa">Buscamos un número que al multiplicarse por sí mismo no pase de 13. Sabemos que:</string>
+    <string name="thirdStepRa">Paso 3: Calcular el resto</string>
+    <string name="thirdStepExpRa">Restamos para ver cuánto falta:</string>
+    <string name="resultRa">Resultado</string>
+    <string name="resultFinishRa">La raíz cuadrada de 13 es: √13 = 3 y resto 4</string>
+    <string name="Potencia">Potencias Básicas</string>
+    <string name="firstStepP">Paso 1: Entender la potencia</string>
+    <string name="firstStepExpP">Una potencia es multiplicar un mismo número varias veces. Aquí vamos a calcular 3² (3 elevado a 2).</string>
+    <string name="secondStepP">Paso 2: Multiplicar la base</string>
+    <string name="secondStepExpP">La base es 3 y el exponente es 2, así que multiplicamos el 3 dos veces:</string>
+    <string name="thirdStepP">Paso 3: Calcular el resultado</string>
+    <string name="thirdStepExpP">Hacemos la multiplicación:</string>
+    <string name="resultP">Resultado</string>
+    <string name="resultFinishP">Entonces: 3² = 9</string>
+    <string name="ultimoVistoRaices">Raices</string>
+    <string name="ultimoVistoPotencias">Potencias</string>
 
 </resources>

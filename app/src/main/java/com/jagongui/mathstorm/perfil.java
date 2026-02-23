@@ -93,6 +93,12 @@ public class perfil extends AppCompatActivity {
                                 case "division":
                                     tvEjemplo.setText(R.string.ultimoVistoDivision);
                                     break;
+                                case "potencias":
+                                    tvEjemplo.setText(R.string.ultimoVistoPotencias);
+                                    break;
+                                case "raices":
+                                    tvEjemplo.setText(R.string.ultimoVistoRaices);
+                                    break;
                             }
                         } else {
                             tvEjemplo.setText(getString(R.string.ultimoVistoDefault));

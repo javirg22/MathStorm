@@ -8,22 +8,18 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class activity_divs_example extends AppCompatActivity {
-
+public class multi_example extends AppCompatActivity {
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_divs_example);
+        setContentView(R.layout.activity_multi_example);
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +32,7 @@ public class activity_divs_example extends AppCompatActivity {
 
         bottomAppBar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.menu_perfil) {
-                Intent intent = new Intent(activity_divs_example.this, perfil.class);
+                Intent intent = new Intent(multi_example.this, perfil.class);
                 startActivity(intent);
                 return true;
             }
@@ -58,20 +54,20 @@ public class activity_divs_example extends AppCompatActivity {
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_divs_example.this, EjerciciosActivity.class));
+                startActivity(new Intent(multi_example.this, EjerciciosActivity.class));
             }
         });
 
         option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_divs_example.this, ExamplesActivity.class));
+                startActivity(new Intent(multi_example.this, ExamplesActivity.class));
             }
         });
         option3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_divs_example.this, MainActivity.class));
+                startActivity(new Intent(multi_example.this, MainActivity.class));
             }
         });
     }
