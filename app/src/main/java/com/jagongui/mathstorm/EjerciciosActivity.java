@@ -80,6 +80,16 @@ public class EjerciciosActivity extends AppCompatActivity {
         });
         BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
 
+        rootCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, RootActivity.class);
+            startActivity(intent);
+        });
+
+        expCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, ExpActivity.class);
+            startActivity(intent);
+        });
+
         bottomAppBar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.menu_perfil) {
                 Intent intent = new Intent(EjerciciosActivity.this, perfil.class);
