@@ -107,17 +107,49 @@ public class RootActivity extends AppCompatActivity {
                 : "";
 
         if (userAnswer.isEmpty()) {
-            tilAnswer.setError("Introduce una respuesta");
+            tilAnswer.setError(getString(R.string.introduceAnswer));
             return;
         }
 
         if (Math.abs(Integer.parseInt(userAnswer)) == correctAnswer) {
             tilAnswer.setError(null);
-            Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show();
             updateDailyStreak();
             userRef.update("exercisesCompleted", FieldValue.increment(1));
         } else {
-            tilAnswer.setError("❌ Incorrecto");
+            tilAnswer.setError(getString(R.string.incorrect));
+        }
+    }
+    private String getTodayDate() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        return sdf.format(new Date());
+    }
+
+    private long daysBetween(String lastDate, String today) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        try {
+            Date last = sdf.parse(lastDate);
+            Date now = sdf.parse(today);
+            Calendar cLast = Calendar.getInstance();
+            Calendar cNow = Calendar.getInstance();
+            cLast.setTime(last);
+            cNow.setTime(now);
+            // Normalizamos a medianoche
+            cLast.set(Calendar.HOUR_OF_DAY, 0);
+            cLast.set(Calendar.MINUTE, 0);
+            cLast.set(Calendar.SECOND, 0);
+            cLast.set(Calendar.MILLISECOND, 0);
+
+            cNow.set(Calendar.HOUR_OF_DAY, 0);
+            cNow.set(Calendar.MINUTE, 0);
+            cNow.set(Calendar.SECOND, 0);
+            cNow.set(Calendar.MILLISECOND, 0);
+
+            long diffMillis = cNow.getTimeInMillis() - cLast.getTimeInMillis();
+            return diffMillis / (1000 * 60 * 60 * 24);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return 0;
         }
     }
     private String getTodayDate() {

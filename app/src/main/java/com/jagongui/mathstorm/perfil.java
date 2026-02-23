@@ -38,7 +38,6 @@ public class perfil extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         loadUserData();
-
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +46,7 @@ public class perfil extends AppCompatActivity {
                 startActivity( new Intent(perfil.this, login.class));
             }
         });
+
     }
     private void loadUserData() {
         String uid = mAuth.getCurrentUser().getUid();
@@ -92,6 +92,12 @@ public class perfil extends AppCompatActivity {
                                     break;
                                 case "division":
                                     tvEjemplo.setText(R.string.ultimoVistoDivision);
+                                    break;
+                                case "potencias":
+                                    tvEjemplo.setText(R.string.ultimoVistoPotencias);
+                                    break;
+                                case "raices":
+                                    tvEjemplo.setText(R.string.ultimoVistoRaices);
                                     break;
                             }
                         } else {

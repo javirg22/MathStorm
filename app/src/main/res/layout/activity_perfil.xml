@@ -207,7 +207,6 @@
                     android:layout_height="56dp"
                     android:layout_marginTop="45dp"
                     android:text="@string/cerrarS"
-                    android:onClick="openSignup"
                     android:backgroundTint="@color/rojo"/>
 
             </LinearLayout>

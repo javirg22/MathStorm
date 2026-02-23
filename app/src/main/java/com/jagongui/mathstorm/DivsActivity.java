@@ -103,22 +103,22 @@ public class DivsActivity extends AppCompatActivity {
                 : "";
 
         if (userAnswer.isEmpty() || userAnswerResto.isEmpty()) {
-            tilAnswer.setError("Introduce una respuesta");
+            tilAnswer.setError(getString(R.string.introduceAnswer));
             return;
         }
 
         if (Integer.parseInt(userAnswer) == correctAnswerC  && Integer.parseInt(userAnswerResto) == correctAnswerR) {
             tilAnswer.setError(null);
             tilAnswerR.setError(null);
-            Toast.makeText(this, "✅ Correcto", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show();
             updateDailyStreak();
             userRef.update("exercisesCompleted", FieldValue.increment(1));
         } else {
             if (Integer.parseInt(userAnswer) != correctAnswerC) {
-                tilAnswer.setError("❌ Incorrecto");
+                tilAnswer.setError(getString(R.string.incorrect));
             }
             if(Integer.parseInt(userAnswerResto) != correctAnswerR) {
-                tilAnswerR.setError("❌ Incorrecto");
+                tilAnswerR.setError(getString(R.string.incorrect));
             }
 
             if (Integer.parseInt(userAnswer) == correctAnswerC) {

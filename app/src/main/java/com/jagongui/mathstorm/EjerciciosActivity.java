@@ -68,6 +68,16 @@ public class EjerciciosActivity extends AppCompatActivity {
             Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
             startActivity(intent);
         });
+
+        rootCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, RootActivity.class);
+            startActivity(intent);
+        });
+
+        expCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, ExpActivity.class);
+            startActivity(intent);
+        });
         BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
 
         rootCv.setOnClickListener(v -> {

@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/suma"
+                android:text="@string/Raiz"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -46,7 +46,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/firstStepS"
+                        android:text="@string/firstStepRa"
                         android:textColor="@color/verde"
                         android:textStyle="bold"
                         android:textSize="18sp"
@@ -55,7 +55,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/firstStepExpS"
+                        android:text="@string/firstStepExpRa"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
 
@@ -64,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/gris2"
                         android:padding="8dp"
-                        android:text="  25\n+ 13\n----"
+                        android:text="  √13"
                         android:fontFamily="monospace"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -86,7 +86,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/secondStepS"
+                        android:text="@string/secondStepRa"
                         android:textColor="@color/verde"
                         android:textStyle="bold"
                         android:textSize="18sp"
@@ -95,7 +95,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/secondStepExpS"
+                        android:text="@string/secondStepExpRa"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
 
@@ -104,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/gris2"
                         android:padding="8dp"
-                        android:text="  25\n+ 13\n----\n  8"
+                        android:text="  3 × 3 = 9\n+ 4 × 4 = 16  (se pasa)\n"
                         android:fontFamily="monospace"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -126,7 +126,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/thirdStepS"
+                        android:text="@string/thirdStepRa"
                         android:textColor="@color/verde"
                         android:textStyle="bold"
                         android:textSize="18sp"
@@ -135,7 +135,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/thirdStepExpS"
+                        android:text="@string/thirdStepExpRa"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
 
@@ -144,7 +144,7 @@
                         android:layout_height="wrap_content"
                         android:background="@color/gris2"
                         android:padding="8dp"
-                        android:text="  25\n+ 13\n----\n  38"
+                        android:text="  13 − 9 = 4"
                         android:fontFamily="monospace"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -166,7 +166,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/resultS"
+                        android:text="@string/resultRa"
                         android:textColor="@color/verde"
                         android:textStyle="bold"
                         android:textSize="18sp"
@@ -175,7 +175,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/resultFinishS"
+                        android:text="@string/resultFinishRa"
                         android:textColor="@color/black"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

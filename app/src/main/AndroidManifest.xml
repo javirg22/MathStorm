@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MathStorm">
         <activity
+            android:name=".exp_example"
+            android:exported="false" />
+        <activity
+            android:name=".root_example"
+            android:exported="false" />
+        <activity
+            android:name=".divs_example"
+            android:exported="false" />
+        <activity
+            android:name=".multi_example"
+            android:exported="false" />
+        <activity
+            android:name=".resta_example"
+            android:exported="false" />
+        <activity
             android:name=".ExpActivity"
             android:exported="false" />
         <activity
@@ -43,8 +58,7 @@
             android:exported="false" />
         <activity
             android:name=".EjerciciosActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MathStorm.ActivityFix"/>
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
