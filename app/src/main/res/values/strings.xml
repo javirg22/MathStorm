@@ -61,4 +61,52 @@
     <string name="ultimoVistoDivision">División</string>
     <string name="ultimoVistoDefault" translatable="false">___</string>
     <string name="dias">dias</string>
+    <string name="incorrect">❌ Incorrecto</string>
+    <string name="correct">✅ Correcto</string>
+    <string name="introduceAnswer">Introduce una respuesta</string>
+
+    <!--Strings para los ejemplos-->
+    <!--Suma-->
+    <string name="suma">Suma Básica</string>
+    <string name="firstStepS">Paso 1: Alinear los números</string>
+    <string name="firstStepExpS">Coloca los números uno debajo del otro, alineando las unidades.</string>
+    <string name="secondStepS">Paso 2: Sumar las unidades</string>
+    <string name="secondStepExpS">Suma las cifras de la columna de las unidades: 5 + 3 = 8</string>
+    <string name="thirdStepS">Paso 3: Sumar las decenas</string>
+    <string name="thirdStepExpS">Suma las cifras de la columna de las decenas: 2 + 1 = 3</string>
+    <string name="resultS">Resultado</string>
+    <string name="resultFinishS">¡Perfecto! 25 + 13 = 38</string>
+
+    <!--Resta-->
+    <string name="resta">Resta Básica</string>
+    <string name="firstStepR">Paso 1: Alinear los números</string>
+    <string name="firstStepExpR">Coloca el número mayor arriba y alinea las unidades.</string>
+    <string name="secondStepR">Paso 2: Restar las unidades</string>
+    <string name="secondStepExpR">Resta las unidades: 5 - 3 = 2</string>
+    <string name="thirdStepR">Paso 3: Restar las decenas</string>
+    <string name="thirdStepExpR">Resta las decenas: 2 - 1 = 1</string>
+    <string name="resultR">Resultado</string>
+    <string name="resultFinishR">¡Perfecto! 25 - 13 = 12</string>
+
+    <!--Multiplicacion-->
+    <string name="multiplicacion">Multiplicación Básica</string>
+    <string name="firstStepM">Paso 1: Repetir sumas iguales</string>
+    <string name="firstStepExpM">Multiplicar es sumar el mismo número varias veces.</string>
+    <string name="secondStepM">Paso 2: Repetir la suma</string>
+    <string name="secondStepExpM">Sumamos 4 tres veces: 4 + 4 + 4</string>
+    <string name="thirdStepM">Paso 3: Calcular el resultado</string>
+    <string name="thirdStepExpM">sumamos todo</string>
+    <string name="resultM">Resultado</string>
+    <string name="resultFinishM">¡Perfecto! 4 × 3 = 12</string>
+
+    <!--División-->
+    <string name="división">División Básica</string>
+    <string name="firstStepD">Paso 1: Entender la división</string>
+    <string name="firstStepExpD">Dividir es repartir una cantidad en partes iguales.</string>
+    <string name="secondStepD">Paso 2: Repartir en grupos</string>
+    <string name="secondStepExpD">Repartimos el 13 en 3 grupos iguales.</string>
+    <string name="thirdStepD">Paso 3: Calcular el resultado</string>
+    <string name="thirdStepExpD">Sumamos lo que se repartió.</string>
+    <string name="resultD">Resultado</string>
+    <string name="resultFinishD">Si 4 × 3 = 12 y sobra 1, entonces: 13 ÷ 3 = 4 y resto 1</string>
 </resources>

@@ -68,6 +68,16 @@ public class EjerciciosActivity extends AppCompatActivity {
             Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
             startActivity(intent);
         });
+
+        rootCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, RootActivity.class);
+            startActivity(intent);
+        });
+
+        expCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, ExpActivity.class);
+            startActivity(intent);
+        });
         BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
 
         bottomAppBar.setOnMenuItemClickListener(item -> {
@@ -88,15 +98,7 @@ public class EjerciciosActivity extends AppCompatActivity {
     private void showBottomSheetDialog () {
         View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_layout, null);
 
-        rootCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, RootActivity.class);
-            startActivity(intent);
-        });
 
-        expCv.setOnClickListener(v -> {
-            Intent intent = new Intent(EjerciciosActivity.this, ExpActivity.class);
-            startActivity(intent);
-        });
 
         // Crear el BottomSheetDialog
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
