@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openPrueba(View v){
-        Intent intent = new Intent(MainActivity.this, mainBab.class);
+        Intent intent = new Intent(MainActivity.this, EjerciciosActivity.class);
         startActivity(intent);
     }
     public void openExamples(View v){
-        Intent intent = new Intent(MainActivity.this, EjerciciosActivity.class);
+        Intent intent = new Intent(MainActivity.this, ExamplesActivity.class);
         startActivity(intent);
     }
     @Override

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MathStorm">
         <activity
+            android:name=".ExpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RootActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExamplesActivity"
             android:exported="false" />
         <activity

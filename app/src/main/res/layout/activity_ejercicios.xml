@@ -33,14 +33,7 @@
 
                 >
 
-                <TextView
-                    android:layout_marginStart="12dp"
-                    android:text="@string/Aritm"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    />
+
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/SumaCv"
@@ -192,14 +185,84 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_marginStart="12dp"
-                android:text="@string/Aritm2"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                />
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/RootCv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/root"
+                            />
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="82dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="@string/Root"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="@string/Root_Text"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ExpCv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/exponent"
+                            />
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="82dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:text="@string/Exp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="@string/Exp_Text"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
 
 
 

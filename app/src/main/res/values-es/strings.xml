@@ -17,6 +17,10 @@
     <string name="Mult_Text">Para entender el uso de la multiplicación</string>
     <string name="Div">División</string>
     <string name="Div_Text">Entiende el cociente y resto de la división</string>
+    <string name="Exp">Potencias</string>
+    <string name="Exp_Text">Realiza operaciones con multiplicaciones aditivas</string>
+    <string name="Root">Raíces</string>
+    <string name="Root_Text">Calcula el paso más allá de la división</string>
     <string name="LoginSuccessful">Sesión iniciada correctamente</string>
     <string name="LoginUnsusccessful">Error al iniciar sesión, intente otro usuario o contraseña</string>
     <string name="WelcomeMessage">Bienvenido a MathStorm</string>

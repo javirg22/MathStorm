@@ -18,6 +18,8 @@ public class EjerciciosActivity extends AppCompatActivity {
     CardView restaCv;
     CardView multiCv;
     CardView divCv;
+    CardView rootCv;
+    CardView expCv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class EjerciciosActivity extends AppCompatActivity {
         restaCv = findViewById(R.id.RestaCv);
         multiCv = findViewById(R.id.MultiCv);
         divCv = findViewById(R.id.DivsCv);
+        rootCv = findViewById(R.id.RootCv);
+        expCv = findViewById(R.id.ExpCv);
 
         sumaCv.setOnClickListener(v -> {
             Intent intent = new Intent(EjerciciosActivity.this, SumaActivity.class);
@@ -52,6 +56,16 @@ public class EjerciciosActivity extends AppCompatActivity {
         });
 
         divCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
+            startActivity(intent);
+        });
+
+        rootCv.setOnClickListener(v -> {
+            Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
+            startActivity(intent);
+        });
+
+        expCv.setOnClickListener(v -> {
             Intent intent = new Intent(EjerciciosActivity.this, DivsActivity.class);
             startActivity(intent);
         });
