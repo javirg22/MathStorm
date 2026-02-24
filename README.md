@@ -1,4 +1,8 @@
-<strong> Desarrolladores del proyecto: Gonzalo Martinez, Javier Retuerta y Guillermo Leal </strong>
+<strong> Desarrolladores del proyecto: 
+[Gonzalo Martinez](https://github.com/GonzaloMarCa) 
+[Javier Retuerta](https://github.com/javirg22)
+[Guillermo Leal](https://github.com/Guillermo-Leal)
+</strong>
 <br>
 <strong> Nombre del proyecto: MathStorm </strong>
 <br>
