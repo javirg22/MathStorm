@@ -19,27 +19,54 @@ manera posible.
 
 <strong>-------------------------------------------------------------------------------------------</strong>
 ## Login y Registro
-Paginas simples las cuales permiten iniciar sesion y/o registrarse para poder acceder a la aplicación
+Estas son las paginas de inicio de sesion y registro que te permitiran tanto iniciar tu sesión si te
+registraste antes o registrarte si eres un usuario nuevo.
+
 ![Login](img/login.png)
 ![Register](img/register.png)
 
 
 ## Pagina principal
-Pagina con dos opciones, ejemplos y ejercicios que te llevaran a esa pestaña especifica
+Pagina de bienvenida de la aplicación, en esta se encuentran dos botones y el bab, estos botones te 
+llevaran a las paginas indicadas por cada uno, o ejemplos o ejercicios.
+
 ![Main](img/main.png)
 
 ## Ejemplos
-Pagina con la lista de los ejemplos con una pequeña descripcion, al darle a las opciones te llevara
-al ejemplo elegido.
+En esta pagina encontraremos los distintos ejemplos de los ejercicios que podemos encontrar dentro 
+de la aplicación, estos van desde sumas hasta potencias.
+
 ![Ejemplos](img/ejemplos.png)
+                    
+## Ejemplo de suma
+Esta es la página de ejmplo en este caso de la suma, se tiene una explicación de como hacerla junto
+a un ejemplo, tambien tenemos el BaB por lo cual podemos ir directamente de esta pagina a los
+ejercicios.
+
+![EjemploSuma](img/ejemploSuma.png)
 
 ## Ejercicios
-Pagina donde se daran los ejercicios a resolver con un boton de verificacion y uno de mostrar el 
-siguiente ejercicio
+Esta es la pagina de ejercicios, aqui se pueden ver todas las opciones que proporciona la aplicación
+desde sumas simples hasta las potencias.
+
 ![Ejercicios](img/ejercicios.png)
 
-## Perfil
-Pagina donde ver tu perfil o el de otras personas donde se mostrara los ejemplos vistos, ejercicios
-hechos y racha de ejercicios
+## Ejercicio Suma
+Esta es la pagina de ejercicio de la suma  en este caso son ejercicios de suma con un boton para 
+ver si tu respuesta es la correcta y un boton para generar una nueva suma.    
 
-![Perfil](img/profile.png)
+![EjercicioSuma](img/ejercicioSuma.png)
+
+## Perfil                                                             
+Esta es tu pagina de perfil personal, en ella podras ver dcual es el ultimo ejemplo al que has
+accedido y podras ver cuantos ejercicios has hecho junto a tu racha diaria que se va actualizando
+cuando terminas tu primer ejercicio del dia.
+
+![Perfil](img/perfil.png)
+                                               
+## BaB (Bottom app Bar)
+En muchas pantallas podemos ver una barra abajo con dos botones, uno morado grande con el logo de la
+aplicación en negro y otro que te llevará al perfil, este boton grande es nuestro Fab que te abrira
+la siguiente ventana permitiendote acceder a las paginas de la app de manera sencilla.
+
+![Bab](img/bab.png)
