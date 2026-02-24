@@ -152,38 +152,7 @@ public class RootActivity extends AppCompatActivity {
             return 0;
         }
     }
-    private String getTodayDate() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
-        return sdf.format(new Date());
-    }
 
-    private long daysBetween(String lastDate, String today) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
-        try {
-            Date last = sdf.parse(lastDate);
-            Date now = sdf.parse(today);
-            Calendar cLast = Calendar.getInstance();
-            Calendar cNow = Calendar.getInstance();
-            cLast.setTime(last);
-            cNow.setTime(now);
-            // Normalizamos a medianoche
-            cLast.set(Calendar.HOUR_OF_DAY, 0);
-            cLast.set(Calendar.MINUTE, 0);
-            cLast.set(Calendar.SECOND, 0);
-            cLast.set(Calendar.MILLISECOND, 0);
-
-            cNow.set(Calendar.HOUR_OF_DAY, 0);
-            cNow.set(Calendar.MINUTE, 0);
-            cNow.set(Calendar.SECOND, 0);
-            cNow.set(Calendar.MILLISECOND, 0);
-
-            long diffMillis = cNow.getTimeInMillis() - cLast.getTimeInMillis();
-            return diffMillis / (1000 * 60 * 60 * 24);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return 0;
-        }
-    }
 
     private void updateDailyStreak() {
         String today = getTodayDate();

@@ -245,22 +245,6 @@
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
-            <TextView
-                android:layout_marginStart="12dp"
-                android:text="@string/Aritm2"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                />
         </LinearLayout>
         </androidx.core.widget.NestedScrollView>
             <com.google.android.material.bottomappbar.BottomAppBar
@@ -275,8 +259,6 @@
                 style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
                 app:backgroundTint="@color/verde">
             </com.google.android.material.bottomappbar.BottomAppBar>
-
-            <!--style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
