@@ -70,38 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void showBottomSheetDialog() {
-        View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_layout, null);
 
-        // Crear el BottomSheetDialog
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
-        bottomSheetDialog.setContentView(view);
-        bottomSheetDialog.show();
-
-        TextView option1 = view.findViewById(R.id.OpcionEjercicios);
-        TextView option2 = view.findViewById(R.id.OpcionEjemplos);
-        TextView option3 = view.findViewById(R.id.OpcionPaginaPrincipal);
-
-        option1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EjerciciosActivity.class));
-            }
-        });
-
-        option2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ExamplesActivity.class));
-            }
-        });
-        option3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText( MainActivity.this, getString(R.string.Yaestas) , Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {

@@ -209,6 +209,14 @@
                     android:text="@string/cerrarS"
                     android:backgroundTint="@color/rojo"/>
 
+                <Button
+                    android:id="@+id/buttonThanks"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/gracias"
+                    android:backgroundTint="@color/verde"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
