@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
         bottomAppBar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.menu_perfil) {
