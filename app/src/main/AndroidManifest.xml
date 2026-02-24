@@ -60,6 +60,9 @@
             android:name=".EjerciciosActivity"
             android:exported="false" />
         <activity
+            android:name=".AgradecimientosActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.MathStorm.SplashScreen">

@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class perfil extends AppCompatActivity {
-    Button exit;
+    Button exit, acknowledgements;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
     TextView tvName, tvEmail, tvRacha, tvEjercicios, tvEjemplo;
@@ -27,6 +27,7 @@ public class perfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
         exit = findViewById(R.id.buttonLogOut);
+        acknowledgements = findViewById(R.id.buttonThanks);
         tvName = findViewById(R.id.User);
         tvEmail = findViewById(R.id.Email);
         tvRacha = findViewById(R.id.racha);
@@ -44,6 +45,12 @@ public class perfil extends AppCompatActivity {
                 mAuth.signOut();
                 finish();
                 startActivity( new Intent(perfil.this, login.class));
+            }
+        });
+        acknowledgements.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent(perfil.this, AgradecimientosActivity.class));
             }
         });
 
